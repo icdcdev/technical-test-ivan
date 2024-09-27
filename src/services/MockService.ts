@@ -1,4 +1,5 @@
 // Interface
+import { Order } from "../interfaces/orders";
 import { User } from "../interfaces/user";
 
 const API_URL = 'http://localhost:3000';
@@ -23,9 +24,23 @@ const authenticateUser = async (usuario: string, contraseña: string): Promise<s
   }
 };
 
+const getOrders = async (): Promise<Order[] | null> => {
+  try {
+    const response = await fetch(`${API_URL}/orders`);
+    if (!response.ok) {
+      return null;
+    }
+    const data: Order[] = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error during get data:', error);
+    return null;
+  }
+}
+
 // Función para crear un token simulado
 const generateToken = (usuario: string): string => {
     return `token-${usuario}-${new Date().getTime()}`;
-  };
+  };  
 
-export { authenticateUser };
+export { authenticateUser, getOrders };

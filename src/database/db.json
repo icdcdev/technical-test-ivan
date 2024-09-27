@@ -2,5 +2,39 @@
   "users": [
     { "usuario": "user1", "contraseña": "password1" },
     { "usuario": "user2", "contraseña": "password2" }
+  ],
+  "orders": [
+    {
+      "noOrden": "ABC1234",
+      "vin": "MEX123456789H23789",
+      "modelo": "Jetta MK3",
+      "fechaEntrega": "20-07-24",
+      "hora": "09:00 AM",
+      "tipoOrden": "Servicio de Mantenimiento"
+    },
+    {
+      "noOrden":  "ABC1235",
+      "vin": "IND987654321H23333",
+      "modelo": "AUDI A4",
+      "fechaEntrega": "21-08-24",
+      "hora": "07:42 AM",
+      "tipoOrden": "Servicio de Hojalateria"
+    },
+    {
+      "noOrden":  "ABC1236",
+      "vin": "CAN123456789876543",
+      "modelo": "Seat Ibiza",
+      "fechaEntrega": "23-09-24",
+      "hora": "12:30 PM",
+      "tipoOrden": "Mantenimiento"
+    },
+    {
+      "noOrden":  "ABC1237",
+      "vin": "3HGBH41JXMN109188",
+      "modelo": "Modelo C",
+      "fechaEntrega": "01-10-24",
+      "hora": "03:00 PM",
+      "tipoOrden": "Mantenimiento"
+    }
   ]
 }
