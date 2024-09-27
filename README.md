@@ -19,10 +19,6 @@ La Prueba Técnica se creo con React + TypeScript/Vite Js; para poder instalar y
 | `typescript` | **Requiere** "^5.5.3" |
 | `typescript-eslint` | **Requiere** "^8.0.1" |
 
-Para verificar la instalación y uso de su ecosistema de Expo: [Expo](https://expo.dev/).
-
-Para verificar la instalación y documentación de Vision Camera (Plugin para camara): [Vision Camera](https://react-native-vision-camera.com/docs/guides).
-
 ## Clonar y Ejecutar Localmente
 
 Clonar el proyecto
